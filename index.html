@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <title>VAN</title>
-        <style>
+<head>
+<meta charset='utf-8'>
+<title>VAN</title>
+<style>
+    *{padding: 0px; margin: 0px;}
+    header, nav, section, footer {
+        border: solid 1px black;
+    }
+    body{
+        align-content: center;
+    }
+    header{
+        width: 1200px; height: 100px;
+        margin: 0 auto;
+    }
+    nav{
+        width: 1200px; height: 70px;
+        margin: 10px auto;
+    }
+    section {
+        width: 1200px; height: 1000px;
+        margin: 10px auto;
+    }
+    footer{
+        width: 1200px; height: 100px;
+        margin: 10px auto;
+    }
+    li{
+        list-style: none;
+    }
 
-        </style>
-    </head>
-    <body>
-        <h3>
-            hello
-        </h3>
-    </body>
+    .inline {
+        display: inline;
+    }
+
+    .poster {
+        display: inline; margin-left: 10px; margin-right: 10px;
+    }
+    .pos_mar {
+        margin-left: 50px; margin-right: 20px; margin-bottom: 50px;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="exhibition/van.png">
+        </div>
+
+    </header>
+
+    <nav>
+        <div>
+            <ul>
+                <li class="inline">
+                    ALL
+                </li>
+                <li class="inline">
+                    ART
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section>
+        <div class="pos_mar">
+            <ul>
+                <li class="poster">
+                    <img src="exhibition/001.jpg" width="250" height="300">
+                </li>
+                <li class="poster">
+                    <img src="exhibition/002.jpg" width="250" height="300">
+                </li>
+                <li class="poster">
+                    <img src="exhibition/003.jpg" width="250" height="300">
+                </li>
+                <li class="poster">
+                    <img src="exhibition/004.png" width="250" height="300">
+                </li>
+            </ul>    
+        </div>
+        <div class="pos_mar">  
+            <ul>
+                <li class="poster">
+                    <img src="exhibition/005.jpg" width="250" height="300">
+                </li>
+                <li class="poster">
+                    <img src="exhibition/006.jpg" width="250" height="300">
+                </li>
+            </ul>
+            
+
+        
+
+    </section>
+
+    <footer>
+        <div>
+
+        </div>
+
+    </footer>
+
+</body>
 </html>
