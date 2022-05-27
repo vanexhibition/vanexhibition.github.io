@@ -5,15 +5,21 @@
 <title>VAN EXHIBITION</title>
 <style>
     *{padding: 0px; margin: 0px;}
+    body {text-align: center;}
     header, nav, section, footer {
         border: solid 1px black;
     }
     body{
         align-content: center;
     }
-    header{
-        width: 1200px; height: 100px;
+    #line_1{
+        width: 1200px; height: 40px;
         margin: 0 auto;
+    }
+
+    #line_2 {
+        width: 1200px; height: 100px;
+        margin: 5px auto;
     }
     nav{
         width: 1200px; height: 70px;
@@ -53,18 +59,28 @@
     .line {
         margin-left: 60px; margin-right: 20px; margin-top: 20px; 
     }
-    
-    
+    #top {
+        float: right; margin: 10px 10px 0 0;
+    }
+    a:link {text-decoration: none; color: black}
+    a:visited {text-decoration: none; color: black}
 
 
 </style>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="exhibition/van.png">
+    <header id="line_1">
+        <div id="top">
+           <a href="login.html"> 로그인</a> ㅣ<a href="join.html"> 회원가입 </a>ㅣ Q&A
         </div>
+    </header>
+    <header id="line_2">
+        
+        <div align="center">
+           <a href="index.html"> <img src="exhibition/van.png"></a>
+        </div>
+        
 
     </header>
 
