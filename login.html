@@ -7,22 +7,22 @@
 body {text-align: center;}
 
 *{padding: 0px; margin: 0px;}
-    header, nav, section, footer {
-        border: solid 1px black;
-    }
+   
     body{
-        align-content: center;
+        align-content: center; text-align: center;
     }
-    header{
+    #line_1{
+        width: 1200px; height: 40px;
+        margin: 0 auto;
+    }
+
+    #line_2 {
         width: 1200px; height: 100px;
         margin: 0 auto;
     }
-    nav{
-        width: 1200px; height: 70px;
-        margin: 10px auto;
-    }
+    
     section {
-        width: 1200px; height: 1000px;
+        width: 1200px; height: 400px;
         margin: 10px auto;
     }
     footer{
@@ -38,27 +38,70 @@ body {text-align: center;}
     .inline {
         display: inline;
     }
+    #white {
+        color: white;
+    }
+    #topMenu {            
+        height: 30px; 
+        width: 1200px; margin: 0 auto;
+    }
+    #topMenu ul li {                      
+        list-style: none;          
+        color: white;             
+        background-color: #2d2d2d; 
+        float: left;              
+        line-height: 30px;        
+        vertical-align: middle;    
+        text-align: center;         
+    }
+    #topMenu .menuLink {                              
+        text-decoration:none;                    
+        color: white;                              
+        display: block;                          
+        width: 300px;                             
+        font-size: 18px;                          
+        font-weight: bold;                         
+    }
+    #topMenu .menuLink:hover {         
+        color: red;                   
+    }
+    hr {
+        text-align: center; margin: 0 350px 0 350px;
+    }
+    .line {
+        margin-left: 60px; margin-right: 20px; margin-top: 20px; 
+    }
+    a:link {text-decoration: none; color: black}
+    a:visited {text-decoration: none; color: black}
+    #top {
+        float: right; margin: 10px 10px 0 0;
+    }
+    
 </style>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html"> <img src="exhibition/van.png"></a>
+    <header id="line_1">
+        <div id="top">
+           <a href="login.html"> 로그인</a> ㅣ<a href="join.html"> 회원가입 </a>ㅣ <a href="QA.html"> Q&A</a>
         </div>
     </header>
-    <nav>
-        <div>
-            <ul>
-                <li class="inline">
-                    ALL
-                </li>
-                <li class="inline">
-                    ART
-                </li>
-            </ul>
+    <header id="line_2">
+        
+        <div align="center">
+           <a href="index.html"> <img src="exhibition/van.png"></a>
         </div>
-    </nav>
-    <section><br>
+        
+
+    </header>
+    <nav id="topMenu" >
+        <ul>
+                <li><a class="menuLink" href="index.html">ALL</a></li>
+                <li><a class="menuLink" href="art.html">ART</a></li>
+                <li><a class="menuLink" href="installation.html">INSTALLATION ART</a></li>
+                <li><a class="menuLink" href="arvr.html">AR/VR</a></li>
+        </ul>
+</nav>
+    <section><br><br><br>
    <h2>로그인</h2>
    <form action="index.html"><br>
    <span>ID</span> : <input type="text"><br>
@@ -71,5 +114,19 @@ body {text-align: center;}
  
 </form>
 </section>
+<footer>
+    <div>
+        <p id="white">
+            반 <br>
+            회사명:빈센트
+        </p>
+        <p>
+
+        </p>
+
+    </div>
+
+</footer>
+
 </body>
 </html>

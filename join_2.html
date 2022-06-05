@@ -11,11 +11,9 @@ span {font-weight: bold;}
 
 
 *{padding: 0px; margin: 0px;}
-    header, nav, section, footer {
-        border: solid 1px black;
-    }
+    
     body{
-        align-content: center;
+        align-content: center; text-align: center;
     }
     header{
         width: 1200px; height: 100px;
@@ -42,8 +40,36 @@ span {font-weight: bold;}
     .inline {
         display: inline;
     }
+    #white {
+        color: white;
+    }
     a:link {text-decoration: none; color: red}
     a:visited {text-decoration: none; color: red}
+    
+    #topMenu {            
+        height: 30px; 
+        width: 1200px; margin: 0 auto;
+    }
+    #topMenu ul li {                      
+        list-style: none;          
+        color: white;             
+        background-color: #2d2d2d; 
+        float: left;              
+        line-height: 30px;        
+        vertical-align: middle;    
+        text-align: center;         
+    }
+    #topMenu .menuLink {                              
+        text-decoration:none;                    
+        color: white;                              
+        display: block;                          
+        width: 300px;                             
+        font-size: 18px;                          
+        font-weight: bold;                         
+    }
+    #topMenu .menuLink:hover {         
+        color: red;                   
+    }
 </style>
 </head>
 <body>
@@ -52,7 +78,14 @@ span {font-weight: bold;}
             <a href="index.html"> <img src="exhibition/van.png"></a>
         </div>
     </header>
-    
+    <nav id="topMenu" >
+        <ul>
+            <li><a class="menuLink" href="index.html">ALL</a></li>
+            <li><a class="menuLink" href="art.html">ART</a></li>
+            <li><a class="menuLink" href="installation.html">INSTALLATION ART</a></li>
+            <li><a class="menuLink" href="arvr.html">AR/VR</a></li>
+        </ul>
+</nav>
     <section><br><br><br><br><br><br><br>
 <h1>
     회원가입이 완료되었습니다.

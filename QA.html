@@ -2,16 +2,15 @@
 <html>
 <head>
 <meta charset='utf-8'>
-<title>회원가입</title>
+<title>Q&A</title>
 <style>
 body {text-align: center;}
 span {font-weight: bold;}
 
 
 *{padding: 0px; margin: 0px;}
-    
     body{
-        align-content: center;
+        align-content: center; text-align: center;
     }
     #line_1{
         width: 1200px; height: 40px;
@@ -22,22 +21,18 @@ span {font-weight: bold;}
         width: 1200px; height: 100px;
         margin: 0 auto;
     }
-    
     section {
-        width: 1200px; height: 400px;
-        margin: 10px auto;
+        width: 1200px; height: 500px;
+        margin: 0px auto;
     }
     footer{
         width: 1200px; height: 100px;
-        margin: 10px auto;
+        margin: 0px auto;
         background-color: rgb(34, 31, 31);
     }
     span {font-weight: bold;}
     li{
         list-style: none;
-    }
-    #white {
-        color: white;
     }
 
     .inline {
@@ -45,6 +40,9 @@ span {font-weight: bold;}
     }
     hr {
         text-align: center; margin: 0 350px 0 350px;
+    }
+    #white {
+        color: white;
     }
     #topMenu {            
         height: 30px; 
@@ -70,9 +68,6 @@ span {font-weight: bold;}
     #topMenu .menuLink:hover {         
         color: red;                   
     }
-    .line {
-        margin-left: 60px; margin-right: 20px; margin-top: 20px; 
-    }
     a:link {text-decoration: none; color: black}
     a:visited {text-decoration: none; color: black}
     #top {
@@ -81,20 +76,20 @@ span {font-weight: bold;}
 </style>
 </head>
 <body>
-    <form action="join_2.html"><form action="index.html">
-        <header id="line_1">
-            <div id="top">
-               <a href="login.html"> 로그인</a> ㅣ<a href="join.html"> 회원가입 </a>ㅣ <a href="QA.html"> Q&A</a>
-            </div>
-        </header>
-        <header id="line_2">
-            
-            <div align="center">
-               <a href="index.html"> <img src="exhibition/van.png"></a>
-            </div>
-            
     
-        </header>
+    <header id="line_1">
+        <div id="top">
+           <a href="login.html"> 로그인</a> ㅣ<a href="join.html"> 회원가입 </a>ㅣ <a href="QA.html"> Q&A</a>
+        </div>
+    </header>
+    <header id="line_2">
+        
+        <div align="center">
+           <a href="index.html"> <img src="exhibition/van.png"></a>
+        </div>
+        
+
+    </header>
     <nav id="topMenu" >
         <ul>
                 <li><a class="menuLink" href="index.html">ALL</a></li>
@@ -103,29 +98,44 @@ span {font-weight: bold;}
                 <li><a class="menuLink" href="arvr.html">AR/VR</a></li>
         </ul>
 </nav>
-    <section><br><br><br>
-   <h2>회원가입</h2><br>
-    <span>NAME</span> : <input type="text"><br>
-   <span>ID</span> : <input type="text"><br>
-    <span>PW</span> : <input type="password"><br>
-    <span>EMAIL
-   </span> : <input type="text">@
-
-<select>
-    <option>선택</option>
-    <option>naver.com</option>
-    <option>daum.net</option>
-    <option>gmail.com</option>
-</select><br><br>
-<hr width="500px"><br> 
-<span>좋아하는 분야</span> : 
-    <input type="checkbox">아트
-    <input type="checkbox">설치미술
-    <input type="checkbox">AR/VR
-    <input type="checkbox">기타 <br><br>
- <input type="submit" value="확인">
- <input type="reset" value="취소" href="index.html">
-</form>
+    <section><br>
+      <span><h1>Q & A</h1></span>
+      <br>
+      <form action="QA.html">
+    
+      <div class="qq">
+          <input type="text" value="검색어를 입력하세요.">
+          <button type="submit" class="search">검색</button>
+      </div>
+      
+      </form>
+    
+    <br>
+        
+    
+        <span><h3>자주하는 질문</h3></span>
+        <br>
+       <li> <tr>
+          <td><div class="title-info"><a href="index.html" id="a1" class="b1">로그인이 안돼요</a></div></td>
+          <br>
+          <td><div class="title-info"><a href="index.html" id="a2" class="b1">아이디, 비밀번호 찾기가 안돼요</a></div></td>
+          <br>
+          <td><div class="title-info"><a href="index.html" id="a3" class="b1">본인인증시 "이미 본인인증된 아이디가 존재합니다" 라고 나와요.</a></div></td>
+          <br>
+          <td><div class="title-info"><a href="index.html" id="a4" class="b1">본인 인증시 회원정보에 등록된 정보와 일치하지 않는다고 나와요.</a></div></td>
+        </tr>
+    </li>
+    <br>
+        <ul>
+            <span><h3>문의사항 : </h3></span>
+            <br>
+            <textarea rows="5" cols="35"></textarea>
+           <br>
+            <input type="submit" value="문의사항제출">
+        </ul>
+    
+    </table>
+    </div>
 </section>
 <footer>
     <div>
