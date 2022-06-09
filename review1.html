@@ -1,24 +1,145 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
 <style>
+     .clear {clear: both;}
+    *{padding: 0px; margin: 0px;}
+    body {text-align: center;}
+   
+    body{
+        align-content: center;
+    }
+#topMenu {            
+        height: 30px; 
+        width: 1200px; margin: 0 auto;
+    }
+    #topMenu ul li {                      
+        list-style: none;          
+        color: white;             
+        background-color: #2d2d2d; 
+        float: left;              
+        line-height: 30px;        
+        vertical-align: middle;    
+        text-align: center;         
+    }
+    #topMenu .menuLink {                              
+        text-decoration:none;                    
+        color: white;                              
+        display: block;                          
+        width: 240px;                             
+        font-size: 18px;                          
+        font-weight: bold;                         
+    }
+    #topMenu .menuLink:hover {         
+        color: red;                   
+    }
     form{line-height: 35px;}
-    .line { 	height: 805px; margin: 0 0 0 200px;
-	margin-top: 21px;text-align: center; border: double 6px; width: 1500px; }
+    .line { 	height: 775px;  margin: 0 auto;
+	margin-top: 21px;text-align: center; border: double 6px; width: 1200px; }
+    footer{
+        width: 1200px; height: 100px;
+        margin: 0 auto;
+        background-color: rgb(34, 31, 31);
+    }
+    footer{
+    font-size: 14px;
+    /* border: 2px solid red; */
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+footer #comnpany{
+/* border: 2px solid white; */
+width: fit-content;
+}
+
+footer #word{
+    /* border: 2px solid sienna; */
+    display: flex;
+    font-weight: 900;
+    width: fit-content;
+}
+
+footer #info{
+    margin-top: 10px;
+    /* border: 2px solid blue; */
+    line-height: 140%;
+    width: fit-content;
+
+}
+
+footer #right{
+    /* border: 2px solid red; */
+    display: flex;
+    height: fit-content;
+    margin-top: 85px;
+    /* align-items: flex-end; */
+}
+
+footer #notice{
+    /* border: 2px solid green; */
+    width: fit-content;
+    line-height: 140%;
+}
+footer *{
+    color: rgb(200, 200, 200);
+}
 </style>
 </head>
 <body>
+    <header id="line_2">
+        
+        <div align="center">
+           <a href="index.html"> <img src="exhibition/van.png"></a>
+        </div>
+        
+
+    </header>
+
+    <nav id="topMenu" >
+        <ul>
+                <li><a class="menuLink" href="index.html">ALL</a></li>
+                <li><a class="menuLink" href="art.html">ART</a></li>
+                <li><a class="menuLink" href="installation.html">INSTALLATION ART</a></li>
+                <li><a class="menuLink" href="arvr.html">AR/VR</a></li>
+                <li><a class="menuLink" href="review.html">REVIEW</a></li>
+        </ul>
+    </nav>
     <div class="line">
-    <h1>REVIEW</h1>
    <form action="review2.html">
        <br>
-       <textarea rows="40" cols="200"></textarea>
+       <textarea rows="45" cols="150"></textarea>
  <br>
        <input type="submit" value="확인">
        <input type="reset" value="취소">
     </div>
     </form>
+    <div class="clear"></div>
+    
+    
+<footer>
+    <div id="comnpany">
+        <div id="word">
+            <p style="margin-right: 20px;">VAN EXHIBITION</p>
+            <p>반 온라인전시회</p>
+        </div>
+        <div id="info">
+            <p>상호 (주) 빈센트 | 대표자 모범금쪽이들</p>
+            <p>이메일: vanexhibition@naver.com</p>
+            <p>주소: 충청남도 천안시 동남구 호서대길 12</p>
+        </div>
+    </div>
+
+
+    <div id="notice">
+        <h3>디지털기술경영학과</h3>
+        <br>
+        <p>20210324 류연수 20210325 박명현</p>
+        <p>20210328 박하늘 20210330 백우영</p>
+    </div>
+</footer>
 </body>
 </html>
