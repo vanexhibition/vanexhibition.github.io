@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -129,21 +130,28 @@ footer #right{
     margin-top: 85px;
     /* align-items: flex-end; */
 }
-footer, #notice{
+
+footer #notice{
     /* border: 2px solid green; */
     width: fit-content;
     line-height: 140%;
 }
-#banner {
-    display: inline; margin-top: 10px; align: center;
-}
 
-#banner1 {
-    margin-top: 15px;
-}
-hr {
-    text-align: center;
-}
+.section input[id*="slide"] {display: none;}
+.section .slidewrap {max-width: 1200px; margin: 0 auto; overflow: hidden;}
+.section .slidelist {white-space: nowrap; font-size: 0;}
+.section .slidelist > li {display: inline-block; vertical-align: middle;
+     width: 100%; transition: all 0.5s;}
+.section .slidelist > li > a {display: block; position: relative;}
+.section .slidelist > li > a img { margin-top: 2%; width: 100%;}
+.section .slidelist label {position: absolute; z-index: 10;
+top: 50%; transform: translateY(-50%); padding: 50px; cursor: pointer;}
+.section .slidelist .left {left: 5%; background: url(exhibition/화살표2.png) center center / 100% no-repeat;}
+.section .slidelist .right {right: 5%; background: url(exhibition/화살표.png) center center / 100% no-repeat;}
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
 </style>
 </head>
 
@@ -173,20 +181,44 @@ hr {
 </nav>
 
     <section>
-        <div class="clear"></div>
-        <div id="banner">
-            <div id="banner1">
-                <a href="003.html"> <img src="exhibition/1.png"  width="1080px"></a>
-            </div>
-            <div id="banner2">
-                <a href="index.html"> <img src="exhibition/2.png" width="355px"> </a>
-                <a href="review.html"><img src="exhibition/3.png"  width="355px"></a> 
-                <a href="008.html"><img src="exhibition/4.png"  width="355px"></a>
-            </div>
-        </div>
-        <div class="clear"></div>
+        
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="radio" name="slide" id="slide04">
 
-<hr width="1200px">
+            <div class="slidewrap">
+                <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide04" class="left"></label>
+                        <a href="003.html"> <img src="exhibition/1.png"></a>
+                        <label for="slide02" class="right"></label>
+                       </a></li>
+                        <li>
+                            <a>
+                        <label for="slide01" class="left"></label>
+                        <a href="index.html"> <img src="exhibition/2.png"></a>
+                        <label for="slide03" class="right"></label></a></li>
+                        <li>
+                            <a>
+                        <label for="slide02" class="left"></label>
+                        <a href="review.html"> <img src="exhibition/3.png"></a>
+                        <label for="slide04" class="right"></label>
+                    </a>
+                    <li>
+                        <a>
+                    <label for="slide03" class="left"></label>
+                     <a href="008.html"> <img src="exhibition/4.png"></a>
+                    <label for="slide01" class="right"></label>
+                </a>
+                </li>
+                </ul>
+           
+        </div>
+            </div>
+
 
         <div class="line">
             <div class="center">
@@ -406,6 +438,12 @@ hr {
              
            
         </div>
+
+
+
+        
+        
+
     </section>
     <div class="clear"></div>
 
