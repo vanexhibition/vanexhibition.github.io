@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>회원가입</title>
 <meta charset='utf-8'>
-<title>로그인</title>
 <style>
+
+p {color: rgb(112, 122, 255); font-weight: bold;}
 body {text-align: center;}
+span {font-weight: bold;}
+
 
 *{padding: 0px; margin: 0px;}
-   
+    
     body{
         align-content: center; text-align: center;
     }
-    #line_1{
-        width: 1200px; height: 40px;
-        margin: 0 auto;
-    }
-
-    #line_2 {
+    header{
         width: 1200px; height: 100px;
         margin: 0 auto;
     }
-    
+    nav{
+        width: 1200px; height: 70px;
+        margin: 10px auto;
+    }
     section {
-        width: 1200px; height: 400px;
+        width: 1200px; height: 500px;
         margin: 10px auto;
     }
     footer{
@@ -41,6 +43,9 @@ body {text-align: center;}
     #white {
         color: white;
     }
+    a:link {text-decoration: none; color: red}
+    a:visited {text-decoration: none; color: red}
+    
     #topMenu {            
         height: 30px; 
         width: 1200px; margin: 0 auto;
@@ -58,24 +63,14 @@ body {text-align: center;}
         text-decoration:none;                    
         color: white;                              
         display: block;                          
-        width: 240px;                            
+        width: 240px;                           
         font-size: 18px;                          
         font-weight: bold;                         
     }
     #topMenu .menuLink:hover {         
         color: red;                   
     }
-    hr {
-        text-align: center; margin: 0 350px 0 350px;
-    }
-    .line {
-        margin-left: 60px; margin-right: 20px; margin-top: 20px; 
-    }
-    a:link {text-decoration: underline; color: blue}
-    a:visited {text-decoration: underline; color: blue}
-    #top {
-        float: right; margin: 10px 10px 0 0;
-    }
+
     
     footer *{
     color: rgb(200, 200, 200);
@@ -126,18 +121,10 @@ footer #notice{
 </style>
 </head>
 <body>
-    <header id="line_1">
-        <div id="top">
-           <a href="login.html"> 로그인</a> ㅣ<a href="join.html"> 회원가입 </a>ㅣ <a href="QA.html"> Q&A</a>
+    <header>
+        <div>
+            <a href="index.html"> <img src="exhibition/van.png"></a>
         </div>
-    </header>
-    <header id="line_2">
-        
-        <div align="center">
-           <a href="index.html"> <img src="exhibition/van.png"></a>
-        </div>
-        
-
     </header>
     <nav id="topMenu" >
         <ul>
@@ -148,18 +135,15 @@ footer #notice{
             <li><a class="menuLink" href="review.html">REVIEW</a></li>
         </ul>
 </nav>
-    <section><br><br><br>
-   <h2>로그인</h2>
-   <form action="index.html"><br>
-   <span> I   D</span> : <input type="text"><br>
-
-    <span>PW</span> : <input type="password"><br> <br>
-
- <input type="submit" value="확인"><br><br>
- <hr><br>
- <a href="id.html">아이디 찾기</a>  /<a href="password.html">  비밀번호 찾기 </a>
- 
-</form>
+    <section><br><br><br><br><br><br><br>
+<h1>
+    일치하는 회원을 찾지 못했습니다.
+</h1>
+<p><br>
+    다시 회원가입 해주세요.
+</p><br>
+<h2>
+<a href="join.html">[회원가입하기]</a></h2>
 </section>
 <footer>
     <div id="comnpany">
@@ -182,6 +166,5 @@ footer #notice{
         <p>20210328 박하늘 20210330 백우영</p>
     </div>
 </footer>
-
 </body>
 </html>

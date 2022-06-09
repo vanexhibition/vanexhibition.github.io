@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8'>
-<title>로그인</title>
+   <title>아이디찾기 - 반</title>
 <style>
-body {text-align: center;}
+    *{padding: 0px; margin: 0px;}
+    body {text-align: center;}
+    body {text-align: center;}
 
 *{padding: 0px; margin: 0px;}
    
@@ -71,8 +72,8 @@ body {text-align: center;}
     .line {
         margin-left: 60px; margin-right: 20px; margin-top: 20px; 
     }
-    a:link {text-decoration: underline; color: blue}
-    a:visited {text-decoration: underline; color: blue}
+    a:link {text-decoration: none; color: red}
+    a:visited {text-decoration: none; color: red}
     #top {
         float: right; margin: 10px 10px 0 0;
     }
@@ -124,6 +125,8 @@ footer #notice{
     line-height: 140%;
 }
 </style>
+
+
 </head>
 <body>
     <header id="line_1">
@@ -148,18 +151,45 @@ footer #notice{
             <li><a class="menuLink" href="review.html">REVIEW</a></li>
         </ul>
 </nav>
-    <section><br><br><br>
-   <h2>로그인</h2>
-   <form action="index.html"><br>
-   <span> I   D</span> : <input type="text"><br>
+<section><br><br><br>
+    <div id="wrap" class="member">
 
-    <span>PW</span> : <input type="password"><br> <br>
-
- <input type="submit" value="확인"><br><br>
- <hr><br>
- <a href="id.html">아이디 찾기</a>  /<a href="password.html">  비밀번호 찾기 </a>
- 
-</form>
+        <!-- header -->
+        <div id="header">
+           <div class="header_inner">
+             
+           </div>
+        </div>
+        <!-- //header -->
+     
+        <!-- container -->
+        <div id="container">
+     
+           <!-- contents -->
+           <div id="contents">
+              <div class="content_header type2">
+                 <h2>아이디 찾기</h2><br>
+              </div>
+              <div class="idpw_wrap">
+                 <form>
+                    <ul class="join_info type4">
+                       <li>회원가입 시 등록하신 실명을 입력해 주시기 바랍니다.</li><input type="text" name="name" title="이름을 입력해 주세요" placeholder="이름을 입력해 주세요"> <br>
+                       <li>회원가입 시 등록하신 이메일을 입력해주시기 바랍니다.</li><input type="text" name="email" title="이메일을 입력해주세요" placeholder="이메일을 입력해주세요"><br>
+                    </ul>
+     
+                    <input type="hidden" name="checkYN" value="Y"><br>
+                    <a href="idpw.html" class="btn_idpw modal_open"><br>아이디 찾기</a><br><br> 
+                    
+                    <p>반은 여러 작가들의 온라인 전시회를 쉽게 찾을 수 있는 사이트입니다.</p>
+                 </form>
+              </div>
+              
+           </div>
+           <!-- contents -->
+        </div>
+        <!-- //container -->
+     </div>
+     
 </section>
 <footer>
     <div id="comnpany">
